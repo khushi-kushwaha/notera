@@ -1,0 +1,542 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+}
+
+#main{
+    height:100%;
+    width:100%;
+    background-color: #DBE7E8;
+}
+
+#home{
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+#nav{
+    height: 50px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navleft img{
+    height: 40px;
+}
+
+#navleft img:hover{
+    transform: rotate(360deg);
+    transition: transform 0.5s;
+}
+
+#navmid{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+#navmid a{
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 200;
+   opacity: .7;
+}
+
+#navright{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#navright h6{
+    font-size: 17px;
+    font-weight: 100;
+    opacity: .7;
+}
+
+#circle{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    padding: 10px;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#circlefirst{
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    padding: 10px;
+    border:1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+}
+
+#circlefirst:hover{
+    background-color: #4C9E50;
+}
+
+#cube{
+    height: 45%;
+    width: 100%;
+    display:flex;
+    align-items: end;
+    margin-top: 25px;
+}
+
+#cube p{
+    font-size: 40px;
+    color: #1B3D38;
+    font-weight: 500;
+}
+
+#cubeimg{
+    border-radius: 140px;
+    height: 100%;
+    width: 42%;
+    background-image: url(https://www.datocms-assets.com/85733/1681222357-2022-08-03_09102545_photo_by_jimmy_hamelin-3.jpg?ixlib=js-3.8.0&auto=format&w=1500);
+    background-position: center;
+    background-size: cover;
+}
+
+#heading{
+    height: 45%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+#heading h1{
+    font-size:290px;
+    font-weight: 600;
+    position: absolute;
+    top: -30%;
+    left: -2%;
+    color: #1B3D38;
+}
+
+#second{
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #DBE7E8;
+    position: relative;
+}
+
+#secondleft{
+    height: 100%;
+    width: 40%;
+    background-image: url(https://www.datocms-assets.com/85733/1675870049-image01.png?ixlib=js-3.8.0&auto=format&w=720);
+    background-position: center;
+    background-size: cover;
+}
+
+#secondright{
+    color: #2C4C48;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+#second p{
+    margin-bottom:120px;
+    margin-right:20px;
+}
+
+#secondmid{
+    height: 70%;
+    width: 25%;
+    background-color: #72BFDA;
+   position: absolute;
+   bottom: 3%;
+   left: 35%;
+   background-position: center bottom;
+   background-size:120%;
+   background-repeat: no-repeat;
+   background-image: url(Screenshot__86_-removebg-preview.png);
+}
+
+#third{
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #DBE7E8;
+    position: relative;
+}
+
+#third p{
+    font-weight: 400;
+    font-size: 40px; 
+    color: #2C4C48;
+}
+
+#third h5{
+    color: #2C4C48;
+    font-weight: 400;
+    font-size: 30px;
+    position: absolute;
+    top: 70%;
+}
+
+#third i{
+    border-radius: 30px;
+    background-color: white;
+}
+
+#third i:hover{
+    background-color: #1B3D38;
+    color: white;
+}
+
+#scroll{
+    height: 100px;
+    width: 100%;
+    white-space: nowrap;
+    border-top: 1px solid #1B3D38;
+    overflow: hidden;
+}
+
+#scroll h4{
+    color: #1B3D38;
+    background-color: transparent;
+    display: inline-block;
+    font-size: 80px;
+    font-weight: 500;
+    animation-name: scroll;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+}
+
+#scroll i{
+    background-color: transparent;
+}
+
+@keyframes scroll {
+    form{
+        transform: translate(0%);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+
+#forth{
+   height: 100%;
+   width: 100%;
+   background-color: #DBE7E8;
+   padding: 20px;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: flex-end;
+}
+
+#forthleft{
+    height: 100%;
+    width: 48%;
+    background-color: #1B3D38;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #DBE7E8;
+    position: relative;
+    background-position: center bottom;
+   background-size:120%;
+   background-repeat: no-repeat;
+   background-image: url(Screenshot__86_-removebg-preview.png);
+}
+
+#forthright{
+    height: 100%;
+    width: 48%;
+    background-image: url(https://www.datocms-assets.com/85733/1681248220-nos-marques.jpg?ixlib=js-3.8.0&auto=format&w=900);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #DBE7E8;
+    position: relative;
+}
+
+#forthleft:hover{
+    border-radius: 50px;
+}
+
+#forthright:hover{
+    border-radius: 50px;
+}
+
+#forthleft h4{
+    font-size: 35px;
+    font-weight: 500;
+}
+
+#forthleft p{
+    font-size: 20px;
+}
+
+#forthright h4{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+#forthright p{
+    font-size: 20px;
+    font-weight: 300s;
+    margin-bottom: 40px;
+}
+
+#forthleft i{
+    position: absolute;
+    font-size: 60px;
+    bottom: 0%;
+}
+
+#forthright i{
+    position: absolute;
+    font-size: 60px;
+    bottom: 0%;
+}
+
+#fifth{
+    height: 100%;
+    width: 100%;
+    background-color:#1B3D38;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #DBE7E8;
+    border-bottom: 1px solid #DBE7E8 ;
+}
+
+#sperate:nth-child(1){
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sperate:nth-child(1) h4{
+    font-weight: 500;
+    font-size: 30px;
+}
+
+#rhombus{
+    height: 60%;
+    width: 80%;
+    margin-left: 20px;
+    border-radius: 50% 50% 0% 0%;
+    background-image: url(https://www.datocms-assets.com/85733/1681248525-betteraves-1-1-1.jpg?ixlib=js-3.8.0&auto=format&w=600);
+    background-position: center;
+    background-size: cover;
+}
+
+#sperate:nth-child(2){
+    height: 100%;
+    width: 40%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+#sperate:nth-child(2) p{
+     font-weight: 400;
+     margin-top: 40px;
+     font-size: 30px;
+}
+
+#sperate:nth-child(2) h4{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#sperate:nth-child(3){
+    height: 100%;
+    width: 30%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#sptext h2{
+    font-weight: 500;
+    font-size: 50px;
+}
+
+#sixth{
+    height: 100%;
+    width: 100%;
+    background-color:#1B3D38;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #DBE7E8;
+    border-bottom: 1px solid #DBE7E8 ;
+}
+
+#sixthleft{
+    height: 100%;
+    width: 50%;
+    padding: 0px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#sixthtext h2{
+    font-weight: 500;
+    font-size: 50px;
+}
+
+#sixthtext p{
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#sixthleft h4{
+    font-weight: 400;
+    font-size: 25px;
+}
+
+#sixthleft i:hover{
+    border-radius: 50px;
+    background-color:#4C9E50;
+    color: #1B3D38;
+}
+
+#sixthpic{
+    height:60%;
+    width: 35%;
+    border-radius: 130px;
+    background-image: url(https://www.datocms-assets.com/85733/1679682275-emplois-departements.jpg?ixlib=js-3.8.0&auto=format&w=300);
+    background-position: center;
+    background-size: cover;
+}
+
+#sixthright{
+    height: 98%;
+    width: 50%;
+    background-image: url(https://www.datocms-assets.com/85733/1681248724-2022-08-03_09133482_photo_by_jimmy_hamelin-4-min.jpg?ixlib=js-3.8.0&auto=format&w=720);
+    background-position: center;
+    background-size: cover;
+}
+
+#footer{
+    height: 200%;
+    background-color: #1B3D38;
+    width: 100%;
+    color: #DBE7E8;
+    position: relative;
+    background-position: bottom;
+   background-size:100%;
+   background-repeat: no-repeat;
+   background-image: url(Screenshot__86_-removebg-preview.png);
+}
+
+#footerheading{
+    height:25%;
+    overflow: hidden;
+    position: relative;
+}
+
+#footerheading h2{
+  font-size: 298px;
+  font-weight: 500;
+  position: absolute;
+  top: -30%;
+}
+
+#footertext{
+    height: 35%;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+
+}
+
+#footertextleft{
+    height: 100%;
+    width: 45%;
+    flex-direction: column;
+}
+
+#leftright h2{
+   font-size: 30px;
+   font-weight: 500;
+}
+
+#leftright h4{
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 70px;
+}
+
+#footertextleft i{
+    font-size: 30px;
+}
+
+#footertextright{
+    height: 100%;
+    width: 55%;
+    display: flex;
+    padding: 10px;
+}
+
+#rightleft{
+    height: 100%;
+    width: calc(100%/3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#rightleft h5{
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#up{
+    font-size: 60px;
+    right: 5%;
+    top: 60%;
+    position: absolute;
+}
